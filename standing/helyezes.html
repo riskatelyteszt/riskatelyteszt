@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standings | Hungarian Major</title>
+    <!-- betutipusok es ikonok -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- styleok/css -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="helyezes.css">
+</head>
+<body class="dark-theme">
+    <!-- Ambient Background Blobs -->
+    <div class="bg-blob blob-1"></div>
+    <div class="bg-blob blob-2"></div>
+    <div class="bg-blob blob-3"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-crosshairs"></i> HUNGARIAN <span>MAJOR</span>
+        </div>
+        <nav class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../index.html#about">About</a>
+            <a href="../index.html#tournaments">Tournaments</a>
+            <a href="../teams/csapatok.html">Csapatok</a>
+            <a href="helyezes.html" class="active">Helyezések</a>
+        </nav>
+        <div class="nav-actions">
+            <button id="theme-toggle" class="btn-icon" aria-label="Toggle Theme">
+                <i class="fa-solid fa-sun"></i>
+            </button>
+            <a href="https://discord.gg/UFTUpCfgu" class="btn-primary-sm">Register</a>
+        </div>
+    </header>
+
+    <!-- Content Wrapper -->
+    <main class="section-container standings-main-padding">
+        
+        <!-- ==========================================
+             TIER SELECTION
+             ========================================== -->
+        <div id="tier-selection-view" class="view-section active">
+            <h2 class="section-title">Csapat Helyezések</h2>
+            <div class="grid-3-col tier-selection-grid">
+                
+                <div class="glass-card tier-card" onclick="switchView('tier1-view')">
+                    <i class="fa-solid fa-trophy"></i>
+                    <h3>Tier 1 Standings</h3>
+                    <p>High Tier</p>
+                </div>
+
+                <div class="glass-card tier-card" onclick="switchView('tier2-view')">
+                    <i class="fa-solid fa-medal"></i>
+                    <h3>Tier 2 Standings</h3>
+                    <p>Mid Tier</p>
+                </div>
+
+                <div class="glass-card tier-card" onclick="switchView('tier3-view')">
+                    <i class="fa-solid fa-shield"></i>
+                    <h3>Tier 3 Standings</h3>
+                    <p>Low Tier</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ==========================================
+              TIER 1 STANDINGS TABLE
+             ========================================== -->
+        <div id="tier1-view" class="view-section">
+            <button class="back-btn" onclick="switchView('tier-selection-view')">
+                <i class="fa-solid fa-arrow-left"></i> Vissza a választáshoz
+            </button>
+            <h2 class="section-title text-left-alignment">Tier 1 Tabella</h2>
+            
+            <div class="table-container glass-card">
+                <table class="standings-table">
+                    <thead>
+                        <tr>
+                            <th>Hely</th>
+                            <th>Csapat</th>
+                            <th>M</th>
+                            <th>Gy</th>
+                            <th>V</th>
+                            <th>Pontszám</th>
+                            <th>Forma</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="top-three rank-1">
+                            <td><span class="rank-badge">1</span></td>
+                            <td class="team-cell-name"><strong>BŰNVADÁSZOK</strong></td>
+                            <td>14</td>
+                            <td>12</td>
+                            <td>2</td>
+                            <td class="points-highlight">36</td>
+                            <td>
+                                <span class="trend-dot win">W</span>
+                                <span class="trend-dot win">W</span>
+                                <span class="trend-dot win">W</span>
+                                <span class="trend-dot loss">L</span>
+                                <span class="trend-dot win">W</span>
+                            </td>
+                        </tr>
+                        <tr class="top-three rank-2">
+                            <td><span class="rank-badge">2</span></td>
+                            <td class="team-cell-name"><strong>szolnok motor utca 8</strong></td>
+                            <td>14</td>
+                            <td>11</td>
+                            <td>3</td>
+                            <td class="points-highlight">33</td>
+                            <td>
+                                <span class="trend-dot win">W</span>
+                                <span class="trend-dot loss">L</span>
+                                <span class="trend-dot win">W</span>
+                                <span class="trend-dot win">W</span>
+                                <span class="trend-dot win">W</span>
+                            </td>
+                        </tr>
+                        <tr class="top-three rank-3">
+                            <td><span class="rank-badge">3</span></td>
+                            <td class="team-cell-name"><strong>FOGATLAN5</strong></td>
+                            <td>14</td>
+                            <td>10</td>
+                            <td>4</td>
+                            <td class="points-highlight">30</td>
+                            <td>
+                                <span class="trend-dot loss">L</span>
+                                <span class="trend-dot win">W</span>
+                                <span class="trend-dot win">W</span>
+                                <span class="trend-dot loss">L</span>
+                                <span class="trend-dot win">W</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="rank-badge">4</span></td>
+                            <td class="team-cell-name">Team Bloodline</td>
+                            <td>14</td>
+                            <td>9</td>
+                            <td>5</td>
+                            <td class="points-highlight">27</td>
+                            <td>
+                                <span class="trend-dot win">W</span>
+                                <span class="trend-dot win">W</span>
+                                <span class="trend-dot loss">L</span>
+                                <span class="trend-dot loss">L</span>
+                                <span class="trend-dot loss">L</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="rank-badge">5</span></td>
+                            <td class="team-cell-name">veremfekve</td>
+                            <td>14</td>
+                            <td>6</td>
+                            <td>8</td>
+                            <td class="points-highlight">18</td>
+                            <td>
+                                <span class="trend-dot loss">L</span>
+                                <span class="trend-dot loss">L</span>
+                                <span class="trend-dot win">W</span>
+                                <span class="trend-dot win">W</span>
+                                <span class="trend-dot loss">L</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- ==========================================
+             TIER 2 STANDINGS TABLE
+             ========================================== -->
+        <div id="tier2-view" class="view-section">
+            <button class="back-btn" onclick="switchView('tier-selection-view')">
+                <i class="fa-solid fa-arrow-left"></i> Vissza a választáshoz
+            </button>
+            <h2 class="section-title text-left-alignment">Tier 2 Tabella</h2>
+            
+            <div class="table-container glass-card">
+                <table class="standings-table">
+                    <thead>
+                        <tr>
+                            <th>Hely</th>
+                            <th>Csapat</th>
+                            <th>M</th>
+                            <th>Gy</th>
+                            <th>V</th>
+                            <th>Pontszám</th>
+                            <th>Forma</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="top-three rank-1">
+                            <td><span class="rank-badge">1</span></td>
+                            <td class="team-cell-name"><strong>Thor's</strong></td>
+                            <td>7</td>
+                            <td>5</td>
+                            <td>2</td>
+                            <td class="points-highlight">15</td>
+                            <td>
+                                <span class="trend-dot win">W</span>
+                                <span class="trend-dot loss">L</span>
+                                <span class="trend-dot win">W</span>
+                                <span class="trend-dot win">W</span>
+                                <span class="trend-dot win">W</span>
+                            </td>
+                        </tr>
+                        <tr class="top-three rank-2">
+                            <td><span class="rank-badge">2</span></td>
+                            <td class="team-cell-name">CYBER</td>
+                            <td>7</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td class="points-highlight">12</td>
+                            <td>
+                                <span class="trend-dot win">W</span>
+                                <span class="trend-dot win">W</span>
+                                <span class="trend-dot loss">L</span>
+                                <span class="trend-dot win">W</span>
+                                <span class="trend-dot loss">L</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- ==========================================
+             TIER 3 STANDINGS TABLE
+             ========================================== -->
+        <div id="tier3-view" class="view-section">
+            <button class="back-btn" onclick="switchView('tier-selection-view')">
+                <i class="fa-solid fa-arrow-left"></i> Vissza a választáshoz
+            </button>
+            <h2 class="section-title text-left-alignment">Tier 3 Tabella</h2>
+            <div class="glass-card" style="padding: 40px; text-align: center;">
+                <p style="color: var(--text-muted); font-style: italic;">A bajnokság megkezdése után a meccseredmények és pontok itt frissülnek.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Hungarian Major. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+                <a href="#" aria-label="Twitch"><i class="fa-brands fa-twitch"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scriptek -->
+    <script src="../theme.js"></script>
+    <script>
+        // View Controller Script
+        function switchView(viewId) {
+            document.querySelectorAll('.view-section').forEach(view => {
+                view.classList.remove('active');
+            });
+            document.getElementById(viewId).classList.add('active');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
