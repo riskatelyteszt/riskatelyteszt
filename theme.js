@@ -1,4 +1,3 @@
-// Developer signature (hidden)
 (function() {
     const encoded = 'PCEtLSBBeiBvbGRhbHQgZmVqbGVzenRldHRlOiBSSVNLQVRFTEUgfCBBeiBvbGRhbCBrw7NkamFpbmFrIGxlbG9ww6FzYSwgdmFneSBmZWxoYXN6bsOhbMOhc2EgdGlsb3MgfCBBeiBvbGRhbCBmb3Jyw6Fza8OzZGphIE5FTSBhIEh1bmdhcmlhbiBNYWpvciB0dWxhamRvbmEtLT4K';
     const binaryString = atob(encoded);
