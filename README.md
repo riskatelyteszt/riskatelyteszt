@@ -1,0 +1,2 @@
+<!-- Az oldalt fejlesztette: RISKATELY | Az oldal kódjainak lelopása, vagy felhasználása tilos | Az oldal forráskódja NEM a Hungarian Major tulajdona-->
+PCEtLSBBeiBvbGRhbHQgZmVqbGVzenRldHRlOiBSSVNLQVRFTEUgfCBBeiBvbGRhbCBrw7NkamFpbmFrIGxlbG9ww6FzYSwgdmFneSBmZWxoYXN6bsOhbMOhc2EgdGlsb3MgfCBBeiBvbGRhbCBmb3Jyw6Fza8OzZGphIE5FTSBhIEh1bmdhcmlhbiBNYWpvciB0dWxhamRvbmEtLT4K
