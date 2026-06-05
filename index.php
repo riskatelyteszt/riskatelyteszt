@@ -24,8 +24,8 @@
             <a href="#hero">Home</a>
             <a href="#about">About</a>
             <a href="#tournaments">Tournaments</a>
-            <a href="teams/csapatok.html">Teams</a>
-            <a href="standing/helyezes.html">Standings</a>
+            <a href="teams/csapatok.php">Teams</a>
+            <a href="standing/helyezes.php">Standings</a>
         </nav> 
         </nav>
         </nav>
@@ -50,6 +50,7 @@
             </div>
         </section>
 
+<!--PCEtLSBBeiBvbGRhbHQgZmVqbGVzenRldHRlOiBSSVNLQVRFTEUgfCBBeiBvbGRhbCBrw7NkamFpbmFrIGxlbG9ww6FzYSwgdmFneSBmZWxoYXN6bsOhbMOhc2EgdGlsb3MgfCBBeiBvbGRhbCBmb3Jyw6Fza8OzZGphIE5FTSBhIEh1bmdhcmlhbiBNYWpvciB0dWxhamRvbmEtLT4K-->
 
         <section id="about" class="section-container">
             <div class="glass-card about-card">
@@ -58,7 +59,7 @@
                     <p>A Hungarian Major a Counter-Strike 2 versenysorozata nevezési díj nélkül. A szerver legfőbb célja, a fejlődés és a magas szintű versenyzés lehetősége, egy közösség kiépítésével együtt. A versenyek minden héten Szombaton és Vasárnap kerülnek lebonyolításra.</p>
                     <div class="stats-grid">
                         <div class="stat-item">
-                            <span class="stat-number">1300+</span>
+                            <span class="stat-number">1000+</span>
                             <span class="stat-label">Tag</span>
                         </div>
                         <div class="stat-item">
@@ -79,7 +80,7 @@
             <div class="glass-card tournament-card">
                 <div class="tournament-details">
                     <span class="status-live"><span class="dot"></span> Registration Open</span>
-                    <h3>Tier 1 versenyek</h3>
+                    <h3>Tier 3 versenyek</h3>
                     <p><i class="fa-regular fa-calendar"></i> Június 5-7, 2026 &nbsp;|&nbsp; <i class="fa-solid fa-users"></i> 5v5 Competitive</p>
                 </div>
                 <div class="tournament-prize">

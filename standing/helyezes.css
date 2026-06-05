@@ -180,3 +180,14 @@
     background: #e74c3c;
     box-shadow: 0 0 6px rgba(231, 76, 60, 0.2);
 }
+
+.trend-dot.neutral {
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.form-cell {
+    min-width: 180px;
+    white-space: nowrap;
+}
